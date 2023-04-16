@@ -1,0 +1,19 @@
+/*
+Description: Minimal styling for ToDo list.
+Author: Danica Yap
+Email: danica.yap@student.curtin.edu.au
+
+body {
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    width: 600px;
+    margin: 0 auto;
+  }
+  
+  .task {
+    list-style: none;
+  }
+  
+  .task.completed {
+    text-decoration: line-through;
+  }
