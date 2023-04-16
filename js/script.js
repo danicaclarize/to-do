@@ -33,8 +33,16 @@ function onTodolistContainerClicked(event) {
 }
 
 function showActivetasks() {
-    var tasks = document.getElementsByClassName('task');
-    console.log(tasks);
+    var tasks = document.getElementsByClassName('task')
+    for (let i = 0; i < tasks.length; i ++){
+        if (tasks[i].classList.contains("completed")){
+            // Set the display property to "none"
+            tasks[i].style.display = "none";
+        } else {
+            tasks[i].style.display = "block";
+
+        }
+    }
 
 }
   
