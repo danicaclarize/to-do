@@ -45,9 +45,22 @@ function showActivetasks() {
     }
 
 }
+
+function showCompletedTasks() {
+    var tasks = document.getElementsByClassName('task');
+    for (let i = 0; i < tasks.length; i++) {
+      if (!tasks[i].classList.contains("completed")) {
+        // Set the display property to "none"
+        tasks[i].style.display = "none";
+      } else {
+        tasks[i].style.display = "block";
+      }
+    }
+  }
   
 
 // Step 3 link to event handler
 addTaskButton.addEventListener('click', onAddTaskClicked);
 todoListContainer.addEventListener('click', onTodolistContainerClicked);
 showActiveButton.addEventListener('click', showActivetasks);
+showCompletedButton.addEventListener('click', showCompletedTasks);
