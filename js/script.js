@@ -18,16 +18,16 @@ function onAddTaskClicked(event) {
 function onTodoListContainerClicked(event) {
     var targetElement = event.target;
     while (!targetElement.classList.contains("task")){
-        targetElement = targetElement.parentElement;
-
+      targetElement = targetElement.parentElement;
     }
-    var checkbox = targetElement.querySelector(".checkbox");
+    var checkbox = targetElement.querySelector(".task");
     if (checkbox.checked){
-        targetElement.classList.add("completed");
+      targetElement.classList.add("completed");
     } else {
-        targetElement.classList.remove("completed");
+      targetElement.classList.remove("completed");
     }
-}
+  }
+  
 
 // Step 3 link to event handler
 addTaskButton.addEventListener('click', onAddTaskClicked);
