@@ -32,11 +32,14 @@ function onTodolistClicked(event) {
     }
 }
 
-showActivetasks() {
-    
+function showActivetasks() {
+    var tasks = document.getElementsByClassName('task');
+    console.log(tasks);
+
 }
   
 
 // Step 3 link to event handler
 addTaskButton.addEventListener('click', onAddTaskClicked);
 todoListContainer.addEventListener('click', onTodoListContainerClicked);
+showActiveButton.addEventListener('click', showActivetasks);
