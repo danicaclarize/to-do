@@ -41,5 +41,5 @@ function showActivetasks() {
 
 // Step 3 link to event handler
 addTaskButton.addEventListener('click', onAddTaskClicked);
-todoListContainer.addEventListener('click', onTodoListContainerClicked);
+todoListContainer.addEventListener('click', onTodolistContainerClicked);
 showActiveButton.addEventListener('click', showActivetasks);
