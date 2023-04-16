@@ -6,7 +6,7 @@ var templateContainer = document.getElementById("list-item-template");
 var template = templateContainer.innerHTML
 
 var showActiveButton = document.getElementById("show-active");
-
+var showCompletedButton = document.getElementById("show-completed");
 
 
 //Step 2 Write the behaviour
