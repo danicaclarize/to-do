@@ -17,14 +17,14 @@ function onAddTaskClicked(event) {
     todoListContainer.insertAdjacentHTML('afterbegin', taskHTML);
 }
 
-function onTodolistClicked(event) {
+function onTodolistContainerClicked(event) {
     /* We need to know which element triggered the click event */
-    let targetElement = event.target;
+    var targetElement = event.target;
 
     while (!targetElement.classList.contains("task")) {
         targetElement = targetElement.parentElement;
     }
-    let checkbox = targetElement.querySelector(".checkbox");
+    var checkbox = targetElement.querySelector(".checkbox");
     if (checkbox.checked) {
         targetElement.classList.add("completed");
     } else {
