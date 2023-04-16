@@ -5,6 +5,8 @@ var todoListContainer = document.getElementById("todo-list");
 var templateContainer = document.getElementById("list-item-template");
 var template = templateContainer.innerHTML
 
+var showActiveButton = document.getElementById("show-active");
+
 
 
 //Step 2 Write the behaviour
@@ -28,6 +30,10 @@ function onTodolistClicked(event) {
     } else {
         targetElement.classList.remove("completed");
     }
+}
+
+showActivetasks() {
+    
 }
   
 
