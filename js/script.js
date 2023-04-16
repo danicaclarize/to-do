@@ -11,7 +11,7 @@ var template = templateContainer.innerHTML
 function onAddTaskClicked(event) {
     var taskname = newTaskInput.value;
     newTaskInput.value ="";
-    var taskHTML = template.replace("<!-- TASK_NAME-->", taskName)
+    var taskHTML = template.replace("<!-- TASK_NAME-->", taskName);
     todoListContainer.insertAdjacentHTML('afterbegin', taskHTML);
 }
 
