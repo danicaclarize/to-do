@@ -60,7 +60,7 @@ function showCompletedTasks() {
   }
 
   function showAllTasks() {
-    var tasks =document.getElementsByClassName('task';);
+    var tasks =document.getElementsByClassName('task');
     for (let i = 0; i < tasks.length; i++) {
         tasks[i].style.display ="block";
     }
