@@ -7,6 +7,7 @@ var template = templateContainer.innerHTML
 
 var showActiveButton = document.getElementById("show-active");
 var showCompletedButton = document.getElementById("show-completed");
+var showAllButton = document.getElementById("show-all");
 
 
 //Step 2 Write the behaviour
@@ -61,7 +62,7 @@ function showCompletedTasks() {
   function showAllTasks() {
     var tasks =document.getElementsByClassName('task';);
     for (let i = 0; i < tasks.length; i++) {
-        tasks[i].style.display ='block'
+        tasks[i].style.display ="block";
     }
   }
   
