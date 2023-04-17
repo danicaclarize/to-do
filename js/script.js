@@ -57,6 +57,13 @@ function showCompletedTasks() {
       }
     }
   }
+
+  function showAllTasks() {
+    var tasks =document.getElementsByClassName('task';);
+    for (let i = 0; i < tasks.length; i++) {
+        tasks[i].style.display ='block'
+    }
+  }
   
 
 // Step 3 link to event handler
@@ -64,3 +71,4 @@ addTaskButton.addEventListener('click', onAddTaskClicked);
 todoListContainer.addEventListener('click', onTodolistContainerClicked);
 showActiveButton.addEventListener('click', showActivetasks);
 showCompletedButton.addEventListener('click', showCompletedTasks);
+showAllButton.addEventListener('click', showAllTasks);
